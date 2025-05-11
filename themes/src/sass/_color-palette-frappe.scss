@@ -2,39 +2,39 @@
 
 // Red
 $red-light: #d20f39;
-$red-dark: #f38ba8;
+$red-dark: #d20f39;
 
 // Pink
 $pink-light: #ea76cb;
-$pink-dark: #f5c2e7;
+$pink-dark: #ea76cb;
 
 // Purple
 $purple-light: #8839ef;
-$purple-dark: #cba6f7;
+$purple-dark: #8839ef;
 
 // Blue
 $blue-light: #1e66f5;
-$blue-dark: #89b4fa;
+$blue-dark: #1e66f5;
 
 // Teal
 $teal-light: #179299;
-$teal-dark: #94e2d5;
+$teal-dark: #179299;
 
 // Cyan
 $cyan-light: #209fb5;
-$cyan-dark: #74c7ec;
+$cyan-dark: #209fb5;
 
 // Green
 $green-light: #40a02b;
-$green-dark: #a6e3a1;
+$green-dark: #40a02b;
 
 // Yellow
 $yellow-light: #df8e1d;
-$yellow-dark: #f9e2af;
+$yellow-dark: #df8e1d;
 
 // Orange
 $orange-light: #fe640b;
-$orange-dark: #fab387;
+$orange-dark: #fe640b;
 
 // Grey
 $grey-050: #eff1f5;
@@ -68,6 +68,6 @@ $default-light: $blue-light;
 $default-dark: $blue-dark;
 
 // Button
-$button-close: if($topbar == "light", #d20f39, #f38ba8);
-$button-max: if($topbar == "light", #40a02b, #a6e3a1);
-$button-min: if($topbar == "light", #fe640b, #fab387);
+$button-close: if($topbar =='light', $red-light, $red-dark);
+$button-max: if($topbar =='light', $green-light, $green-dark);
+$button-min: if($topbar =='light', $orange-light, $orange-dark);
