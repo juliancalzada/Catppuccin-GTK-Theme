@@ -11,7 +11,7 @@ $dash_background_color: if(
 $dash_placeholder_size: 32px;
 $dash_padding: $base_padding * 2;
 $dash_edge_offset: $base_margin * 4;
-$dash_border_radius: 23px;
+$dash_border_radius: $base_radius;
 $dash_spacing: $base_margin * 0.5;
 
 // container for the dash

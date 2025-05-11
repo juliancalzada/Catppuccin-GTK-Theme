@@ -3174,11 +3174,11 @@ tabbar {
       background: none;
     }
 
-    > separator {
-      margin: 9px 0;
-      min-width: 1px;
-      background-color: on($indicator, divider);
-      transition: opacity 150ms ease-in-out;
+		> separator {
+			margin: 9px 0;
+			min-width: 1px;
+			background-color: on($indicator, divider);
+      transition: opacity $shorter_duration ease-in-out;
 
       &.hidden {
         opacity: 0;
