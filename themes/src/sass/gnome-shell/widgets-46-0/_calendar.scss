@@ -232,9 +232,9 @@
       color: on($primary) !important;
     }
 
-    &:selected {
-      background-color: $primary;
-      color: if($variant == "light", $white, $black) !important;
+		&:selected {
+			background-color: $primary;
+      color: $white !important;
 
       &:hover,
       &:focus {
