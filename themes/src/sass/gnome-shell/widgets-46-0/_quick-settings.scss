@@ -1,14 +1,14 @@
 /* Quick Settings */
 
 .quick-settings {
-	padding: $base_padding * 3 !important;
+  padding: $base_padding * 3 !important;
   border-radius: $base_radius !important;
-	margin-top: $base_padding !important;
+  margin-top: $base_padding !important;
 
-	.icon-button,
-	.button {
+  .icon-button,
+  .button {
     border-radius: $corner_radius;
-		padding: $base_padding * 1.75;
+    padding: $base_padding * 1.75;
 
     > StIcon {
       icon-size: $base_icon_size;
@@ -24,11 +24,11 @@
 .quick-toggle,
 .quick-menu-toggle {
   border-radius: $corner_radius;
-	min-width: 12em;
-	max-width: 12em;
-	min-height: 44px;
-	border: none;
-	margin: 1px;
+  min-width: 12em;
+  max-width: 12em;
+  min-height: 44px;
+  border: none;
+  margin: 1px;
 }
 
 .quick-toggle {
@@ -95,26 +95,26 @@
     min-width: auto;
     max-width: auto;
 
-		&:ltr {
+    &:ltr {
       border-radius: $corner_radius 0 0 $corner_radius;
-		}
-		&:ltr > StBoxLayout {
-			padding-right: $base_padding * 1.5;
-		}
-		&:rtl {
+    }
+    &:ltr > StBoxLayout {
+      padding-right: $base_padding * 1.5;
+    }
+    &:rtl {
       border-radius: 0 $corner_radius $corner_radius 0;
-		}
-		&:rtr > StBoxLayout {
-			padding-left: $base_padding * 1.5;
-		}
+    }
+    &:rtr > StBoxLayout {
+      padding-left: $base_padding * 1.5;
+    }
 
-		&:ltr:last-child {
+    &:ltr:last-child {
       border-radius: $corner_radius;
-		}
-		&:rtl:last-child {
+    }
+    &:rtl:last-child {
       border-radius: $corner_radius;
-		}
-	}
+    }
+  }
 
   .quick-toggle-arrow {
     background-color: $button !important;
@@ -146,13 +146,13 @@
       }
     }
 
-		&:ltr {
+    &:ltr {
       border-radius: 0 $corner_radius $corner_radius 0;
-		}
-		&:rtl {
+    }
+    &:rtl {
       border-radius: $corner_radius 0 0 $corner_radius;
-		}
-	}
+    }
+  }
 }
 
 .quick-slider {
@@ -173,11 +173,11 @@
     icon-size: $base_icon_size;
   }
 
-	.icon-button {
-		background-color: $button !important;
-		color: $primary !important;
+  .icon-button {
+    background-color: $button !important;
+    color: $primary !important;
     border-radius: $corner_radius;
-		padding: $base_padding * 1.5;
+    padding: $base_padding * 1.5;
 
     &:hover {
       background-color: $divider !important;
@@ -221,11 +221,11 @@
     spacing-columns: $base_padding * 2;
     padding-bottom: 2 * $base_padding;
 
-		& .icon {
-			icon-size: $base_icon_size * 1.5; // a non-standard symbolic size but ok
+    & .icon {
+      icon-size: $base_icon_size * 1.5; // a non-standard symbolic size but ok
       border-radius: $corner_radius;
-			padding: 1.5 * $base_padding;
-			background-color: on($popover, divider) !important;
+      padding: 1.5 * $base_padding;
+      background-color: on($popover, divider) !important;
 
       &.active {
         background-color: $primary !important;
@@ -248,11 +248,11 @@
     spacing: 2 * $base_padding;
   }
 
-	.icon-button {
-		background-color: $button;
-		color: $primary !important;
+  .icon-button {
+    background-color: $button;
+    color: $primary !important;
     border-radius: $corner_radius;
-		@extend %button;
+    @extend %button;
 
     > StIcon {
       -st-icon-style: symbolic;

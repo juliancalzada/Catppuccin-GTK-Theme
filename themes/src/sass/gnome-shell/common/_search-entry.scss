@@ -1,16 +1,16 @@
 // Search entry
 %search-entry,
 .search-entry {
-	width: 320px;
-	min-height: $item_size;
-	padding: 0 $base_padding * 2;
-	color: $text-secondary;
-	transition-duration: $shorter_duration;
-	border-radius: $base_radius;
-	caret-color: $text;
-	selection-background-color: $divider;
-	selected-color: on($primary) !important;
-	@include entry(normal, $bc: $base);
+  width: 320px;
+  min-height: $item_size;
+  padding: 0 $base_padding * 2;
+  color: $text-secondary;
+  transition-duration: $shorter_duration;
+  border-radius: $base_radius;
+  caret-color: $text;
+  selection-background-color: $divider;
+  selected-color: on($primary) !important;
+  @include entry(normal, $bc: $base);
 
   &:hover {
     @include entry(hover, $bc: $base);

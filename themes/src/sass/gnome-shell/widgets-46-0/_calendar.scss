@@ -232,8 +232,8 @@
       color: on($primary) !important;
     }
 
-		&:selected {
-			background-color: $primary;
+    &:selected {
+      background-color: $primary;
       color: $white !important;
 
       &:hover,

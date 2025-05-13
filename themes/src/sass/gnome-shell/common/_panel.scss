@@ -22,15 +22,15 @@
     border-radius: $circular_radius;
   }
 
-	// the rounded outset corners
-	.panel-corner {
-		-panel-corner-radius: 0;
-		-panel-corner-background-color: $panel;
-		-panel-corner-border-width: 2px;
-		-panel-corner-border-color: transparent;
-		-panel-corner-opacity: 1;
+  // the rounded outset corners
+  .panel-corner {
+    -panel-corner-radius: 0;
+    -panel-corner-background-color: $panel;
+    -panel-corner-border-width: 2px;
+    -panel-corner-border-color: transparent;
+    -panel-corner-opacity: 1;
     transition-duration: $shorter_duration;
-	}
+  }
 
   // panel menus
   .panel-button {

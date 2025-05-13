@@ -68,6 +68,6 @@ $default-light: $blue-light;
 $default-dark: $blue-dark;
 
 // Button
-$button-close: if($topbar =='light', $red-light, $red-dark);
-$button-max: if($topbar =='light', $green-light, $green-dark);
-$button-min: if($topbar =='light', $orange-light, $orange-dark);
+$button-close: if($topbar == "light", $red-light, $red-dark);
+$button-max: if($topbar == "light", $green-light, $green-dark);
+$button-min: if($topbar == "light", $orange-light, $orange-dark);

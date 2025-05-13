@@ -73,10 +73,10 @@ stage {
 // Buttons
 //
 %button {
-	min-height: 24px;
-	padding: 5px 32px;
+  min-height: 24px;
+  padding: 5px 32px;
   transition-duration: $shorter_duration;
-	border-radius: $corner-radius;
+  border-radius: $corner-radius;
 
   @include button(normal);
 
@@ -123,10 +123,10 @@ stage {
 }
 
 %osd_button {
-	min-height: 24px;
-	padding: $space-size $space-size * 5;
+  min-height: 24px;
+  padding: $space-size $space-size * 5;
   transition-duration: $shorter_duration;
-	border-radius: $corner-radius;
+  border-radius: $corner-radius;
 
   @include button(osd);
 
@@ -645,13 +645,13 @@ $sub_menu_bg: mix($text, $popover, 10%);
     color: $panel_fg;
   }
 
-	&-button {
-		-natural-hpadding: 6px;
-		-minimum-hpadding: 2px;
-		font-weight: bold;
+  &-button {
+    -natural-hpadding: 6px;
+    -minimum-hpadding: 2px;
+    font-weight: bold;
     transition-duration: $shorter_duration;
-		color: $panel_fg;
-	}
+    color: $panel_fg;
+  }
 }
 
 .system-status-icon {
@@ -2047,12 +2047,12 @@ $ws_dot_inactive: $ws_indicator_height / 6;
     min-width: 5px;
   }
 
-	&-item-box {
-		font-weight: normal;
-		background-image: none;
+  &-item-box {
+    font-weight: normal;
+    background-image: none;
     transition-duration: $shorter_duration;
-		color: rgba($panel_fg, 0.9);
-		border-radius: 0;
+    color: rgba($panel_fg, 0.9);
+    border-radius: 0;
 
     .panel-bottom & StLabel {
       padding-left: $space-size;
@@ -2222,15 +2222,15 @@ $ws_dot_inactive: $ws_indicator_height / 6;
     background-color: $primary;
   }
 
-	&-item-box {
-		font-weight: normal;
+  &-item-box {
+    font-weight: normal;
     transition-duration: $shorter_duration;
-		border: none;
-		margin: 0;
-		color: rgba($panel_fg, 0.6);
-		border-radius: 0;
-		spacing: $space-size;
-		border-bottom: 2px solid transparent;
+    border: none;
+    margin: 0;
+    color: rgba($panel_fg, 0.6);
+    border-radius: 0;
+    spacing: $space-size;
+    border-bottom: 2px solid transparent;
 
     &.top,
     &.bottom {
@@ -2585,12 +2585,12 @@ $ws_dot_inactive: $ws_indicator_height / 6;
     background: rgba($panel_fg, 0.12);
   }
 
-	&-box {
-		padding: 0 $space-size;
-		color: $panel_fg;
-		text-shadow: none;
+  &-box {
+    padding: 0 $space-size;
+    color: $panel_fg;
+    text-shadow: none;
     transition-duration: $shorter_duration;
-		border-radius: 0;
+    border-radius: 0;
 
     &.vertical {
       padding: $space-size 0;
