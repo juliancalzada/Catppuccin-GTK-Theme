@@ -1,39 +1,39 @@
 // Catppuccin Hazelnut Theme Color Palette
 
 // Red
-$red-light: #f38ba8;
+$red-light: #d20f39;
 $red-dark: #d20f39;
 
 // Pink
-$pink-light: #f5c2e7;
+$pink-light: #ea76cb;
 $pink-dark: #ea76cb;
 
 // Purple
-$purple-light: #cba6f7;
+$purple-light: #8839ef;
 $purple-dark: #8839ef;
 
 // Blue
-$blue-light: #89b4fa;
+$blue-light: #1e66f5;
 $blue-dark: #1e66f5;
 
 // Teal
-$teal-light: #94e2d5;
+$teal-light: #179299;
 $teal-dark: #179299;
 
 // Cyan
-$cyan-light: #74c7ec;
+$cyan-light: #209fb5;
 $cyan-dark: #209fb5;
 
 // Green
-$green-light: #a6e3a1;
+$green-light: #40a02b;
 $green-dark: #40a02b;
 
 // Yellow
-$yellow-light: #f9e2af;
+$yellow-light: #df8e1d;
 $yellow-dark: #df8e1d;
 
 // Orange
-$orange-light: #fab387;
+$orange-light: #fe640b;
 $orange-dark: #fe640b;
 
 // Grey
@@ -64,8 +64,8 @@ $white: #cad3f5;
 $black: #24273a;
 
 // Theme
-$default-light: $purple-light;
-$default-dark: $purple-dark;
+$default-light: $blue-light;
+$default-dark: $blue-dark;
 
 // Button
 $button-close: if($topbar == "light", $red-light, $red-dark);
