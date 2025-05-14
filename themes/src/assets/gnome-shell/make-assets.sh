@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 
 for theme in '' '-Purple' '-Pink' '-Red' '-Orange' '-Yellow' '-Green' '-Blue' '-Grey'; do
-    for type in '' '-Frappe' '-Macchiato'; do
+    for type in '' '-Frappe' '-Macchiato' '-Hazelnut'; do
         case "$theme" in
             '')
                 theme_color_dark='#27a1b9'
@@ -119,6 +119,47 @@ for theme in '' '-Purple' '-Pink' '-Red' '-Orange' '-Yellow' '-Green' '-Blue' '-
                 -Grey)
                     theme_color_dark='#222436'
                     theme_color_light='#c8d3f5'
+                    ;;
+            esac
+        fi
+
+        if [[ "$type" == '-Hazelnut' ]]; then
+            case "$theme" in
+                '')
+                    theme_color_dark='#1e66f5'
+                    theme_color_light='#1e66f5'
+                    ;;
+                -Purple)
+                    theme_color_dark='#8839ef'
+                    theme_color_light='#8839ef'
+                    ;;
+                -Pink)
+                    theme_color_dark='#ea76cb'
+                    theme_color_light='#ea76cb'
+                    ;;
+                -Red)
+                    theme_color_dark='#d20f39'
+                    theme_color_light='#d20f39'
+                    ;;
+                -Orange)
+                    theme_color_dark='#fe640b'
+                    theme_color_light='#fe640b'
+                    ;;
+                -Yellow)
+                    theme_color_dark='#df8e1d'
+                    theme_color_light='#df8e1d'
+                    ;;
+                -Green)
+                    theme_color_dark='#40a02b'
+                    theme_color_light='#40a02b'
+                    ;;
+                -Blue)
+                    theme_color_dark='#1e66f5'
+                    theme_color_light='#1e66f5'
+                    ;;
+                -Grey)
+                    theme_color_dark='#363a4f'
+                    theme_color_light='#5b6078'
                     ;;
             esac
         fi

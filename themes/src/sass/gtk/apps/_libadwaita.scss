@@ -521,6 +521,8 @@ overlay-split-view {
     background-color: if($variant == "light", $grey-200, $grey-750);
   } @else if $colorscheme == "macchiato" {
     background-color: if($variant == "light", $grey-200, $grey-800);
+  } @else if $colorscheme == "hazelnut" {
+    background-color: if($variant == "light", $grey-200, $grey-800);
   }
 
   color: on($background);
