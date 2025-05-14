@@ -110,9 +110,9 @@ install() {
 	echo "" >>                                                  						 "${THEME_DIR}/index.theme"
 	echo "[X-GNOME-Metatheme]" >>                               						 "${THEME_DIR}/index.theme"
 	echo "GtkTheme=${2}${3}${4}${5}${6}" >>                     						 "${THEME_DIR}/index.theme"
-	echo "MetacityTheme=${2}${3}${4}${5}${6}" >>                						 "${THEME_DIR}/index.theme"
-	echo "IconTheme=Tela-circle${ELSE_DARK:-}" >>               						 "${THEME_DIR}/index.theme"
-	echo "CursorTheme=${2}-cursors" >>                          						 "${THEME_DIR}/index.theme"
+	# echo "MetacityTheme=${2}${3}${4}${5}${6}" >>                						 "${THEME_DIR}/index.theme"
+	# echo "IconTheme=Tela-circle${ELSE_DARK:-}" >>               						 "${THEME_DIR}/index.theme"
+	# echo "CursorTheme=${2}-cursors" >>                          						 "${THEME_DIR}/index.theme"
 	echo "ButtonLayout=close,minimize,maximize:menu" >>         						 "${THEME_DIR}/index.theme"
 
 	# Gnome Shell Themes
@@ -130,11 +130,11 @@ install() {
 	ln -s assets/no-notifications.svg no-notifications.svg
 
 	# GTK2 Themes
-	mkdir -p                                                                      		 "${THEME_DIR}/gtk-2.0"
-	# cp -r "${SRC_DIR}/main/gtk-2.0/gtkrc${theme}${ELSE_DARK:-}${ctype}" 				 "${THEME_DIR}/gtk-2.0/gtkrc"
-	cp -r "${SRC_DIR}/main/gtk-2.0/common/"*'.rc'                                 		 "${THEME_DIR}/gtk-2.0"
-	cp -r "${SRC_DIR}/assets/gtk-2.0/assets-common${ELSE_DARK:-}"                 		 "${THEME_DIR}/gtk-2.0/assets"
-	cp -r "${SRC_DIR}/assets/gtk-2.0/assets${theme}${ELSE_DARK:-}${ctype}/"*"png" 		 "${THEME_DIR}/gtk-2.0/assets"
+	# mkdir -p                                                                      		 "${THEME_DIR}/gtk-2.0"
+	# cp -r "${SRC_DIR}/main/gtk-2.0/gtkrc${theme}${ELSE_DARK:-}${ctype}" 				       "${THEME_DIR}/gtk-2.0/gtkrc"
+	# cp -r "${SRC_DIR}/main/gtk-2.0/common/"*'.rc'                                 		 "${THEME_DIR}/gtk-2.0"
+	# cp -r "${SRC_DIR}/assets/gtk-2.0/assets-common${ELSE_DARK:-}"                 		 "${THEME_DIR}/gtk-2.0/assets"
+	# cp -r "${SRC_DIR}/assets/gtk-2.0/assets${theme}${ELSE_DARK:-}${ctype}/"*"png" 		 "${THEME_DIR}/gtk-2.0/assets"
 
 	# GTK3 Themes
 	mkdir -p                                                                             "${THEME_DIR}/gtk-3.0"
