@@ -70,11 +70,11 @@ OPTIONS:
   -u, --uninstall         Uninstall/Remove installed themes or links
 
   --tweaks                Specify versions for tweaks
-                          1. [frappe|macchiato]	Frappe|Macchiato| ColorSchemes version
-                          2. black      		Blackness color version
-                          3. float      		Floating gnome-shell panel style
-                          4. outline    		Windows with 2px outline style
-                          5. macos:				Macos style windows button
+                          1. [frappe|macchiato|hazelnut]  Frappe|Macchiato|Hazelnut ColorSchemes version
+                          2. black      		              Blackness color version
+                          3. float      		              Floating gnome-shell panel style
+                          4. outline    		              Windows with 2px outline style
+                          5. macos:				                Macos style windows button
 
   -h, --help              Show help
 EOF
@@ -138,7 +138,7 @@ install() {
 
 	# GTK3 Themes
 	mkdir -p                                                                             "${THEME_DIR}/gtk-3.0"
-    cp -r "${SRC_DIR}/assets/gtk/assets${theme}${ctype}"                                 "${THEME_DIR}/gtk-3.0/assets"
+  cp -r "${SRC_DIR}/assets/gtk/assets${theme}${ctype}"                                 "${THEME_DIR}/gtk-3.0/assets"
 	cp -r "${SRC_DIR}/assets/gtk/scalable"                                               "${THEME_DIR}/gtk-3.0/assets"
 	cp -r "${SRC_DIR}/assets/gtk/thumbnails/thumbnail${theme}${ctype}${ELSE_DARK:-}.png" "${THEME_DIR}/gtk-3.0/thumbnail.png"
 	sassc $SASSC_OPT "${SRC_DIR}/main/gtk-3.0/gtk${color}.scss"                          "${THEME_DIR}/gtk-3.0/gtk.css"
@@ -152,40 +152,40 @@ install() {
 	sassc $SASSC_OPT "${SRC_DIR}/main/gtk-4.0/gtk-Dark.scss"                             "${THEME_DIR}/gtk-4.0/gtk-dark.css"
 
 	# Cinnamon Themes
-	mkdir -p                                                                             "${THEME_DIR}/cinnamon"
-	cp -r "${SRC_DIR}/assets/cinnamon/common-assets"                                     "${THEME_DIR}/cinnamon/assets"
-	cp -r "${SRC_DIR}/assets/cinnamon/assets${ELSE_DARK:-}/"*'.svg'                      "${THEME_DIR}/cinnamon/assets"
-	cp -r "${SRC_DIR}/assets/cinnamon/theme${theme}${ctype}/"*'.svg'                     "${THEME_DIR}/cinnamon/assets"
-	sassc $SASSC_OPT "${SRC_DIR}/main/cinnamon/cinnamon${color}.scss"                    "${THEME_DIR}/cinnamon/cinnamon.css"
-	cp -r "${SRC_DIR}/assets/cinnamon/thumbnails/thumbnail${theme}${ctype}${color}.png"  "${THEME_DIR}/cinnamon/thumbnail.png"
+	# mkdir -p                                                                             "${THEME_DIR}/cinnamon"
+	# cp -r "${SRC_DIR}/assets/cinnamon/common-assets"                                     "${THEME_DIR}/cinnamon/assets"
+	# cp -r "${SRC_DIR}/assets/cinnamon/assets${ELSE_DARK:-}/"*'.svg'                      "${THEME_DIR}/cinnamon/assets"
+	# cp -r "${SRC_DIR}/assets/cinnamon/theme${theme}${ctype}/"*'.svg'                     "${THEME_DIR}/cinnamon/assets"
+	# sassc $SASSC_OPT "${SRC_DIR}/main/cinnamon/cinnamon${color}.scss"                    "${THEME_DIR}/cinnamon/cinnamon.css"
+	# cp -r "${SRC_DIR}/assets/cinnamon/thumbnails/thumbnail${theme}${ctype}${color}.png"  "${THEME_DIR}/cinnamon/thumbnail.png"
 
 	# Metacity Themes
-	mkdir -p                                                         					 "${THEME_DIR}/metacity-1"
-	cp -r "${SRC_DIR}/main/metacity-1/metacity-theme-3${window}${color}.xml"             "${THEME_DIR}/metacity-1/metacity-theme-3.xml"
-	cp -r "${SRC_DIR}/assets/metacity-1/assets${window}"                                 "${THEME_DIR}/metacity-1/assets"
-	cp -r "${SRC_DIR}/assets/metacity-1/thumbnail${ELSE_DARK:-}.png"                     "${THEME_DIR}/metacity-1/thumbnail.png"
-	cd "${THEME_DIR}/metacity-1" && ln -s metacity-theme-3.xml metacity-theme-1.xml && ln -s metacity-theme-3.xml metacity-theme-2.xml
+	# mkdir -p                                                         					 "${THEME_DIR}/metacity-1"
+	# cp -r "${SRC_DIR}/main/metacity-1/metacity-theme-3${window}${color}.xml"             "${THEME_DIR}/metacity-1/metacity-theme-3.xml"
+	# cp -r "${SRC_DIR}/assets/metacity-1/assets${window}"                                 "${THEME_DIR}/metacity-1/assets"
+	# cp -r "${SRC_DIR}/assets/metacity-1/thumbnail${ELSE_DARK:-}.png"                     "${THEME_DIR}/metacity-1/thumbnail.png"
+	# cd "${THEME_DIR}/metacity-1" && ln -s metacity-theme-3.xml metacity-theme-1.xml && ln -s metacity-theme-3.xml metacity-theme-2.xml
 
 	# XFWM4 Themes
-	mkdir -p                                                                             "${THEME_DIR}/xfwm4"
-	cp -r "${SRC_DIR}/assets/xfwm4/assets${ELSE_LIGHT:-}${ctype}${window}/"*.png         "${THEME_DIR}/xfwm4"
-	cp -r "${SRC_DIR}/main/xfwm4/themerc${ELSE_LIGHT:-}"                                 "${THEME_DIR}/xfwm4/themerc"
-	mkdir -p                                                                             "${THEME_DIR}-hdpi/xfwm4"
-	cp -r "${SRC_DIR}/assets/xfwm4/assets${ELSE_LIGHT:-}${ctype}${window}-hdpi/"*.png    "${THEME_DIR}-hdpi/xfwm4"
-	cp -r "${SRC_DIR}/main/xfwm4/themerc${ELSE_LIGHT:-}"                                 "${THEME_DIR}-hdpi/xfwm4/themerc"
-	sed -i "s/button_offset=6/button_offset=9/"                                          "${THEME_DIR}-hdpi/xfwm4/themerc"
-	mkdir -p                                                                             "${THEME_DIR}-xhdpi/xfwm4"
-	cp -r "${SRC_DIR}/assets/xfwm4/assets${ELSE_LIGHT:-}${ctype}${window}-xhdpi/"*.png   "${THEME_DIR}-xhdpi/xfwm4"
-	cp -r "${SRC_DIR}/main/xfwm4/themerc${ELSE_LIGHT:-}"                                 "${THEME_DIR}-xhdpi/xfwm4/themerc"
-	sed -i "s/button_offset=6/button_offset=12/"                                         "${THEME_DIR}-xhdpi/xfwm4/themerc"
+	# mkdir -p                                                                             "${THEME_DIR}/xfwm4"
+	# cp -r "${SRC_DIR}/assets/xfwm4/assets${ELSE_LIGHT:-}${ctype}${window}/"*.png         "${THEME_DIR}/xfwm4"
+	# cp -r "${SRC_DIR}/main/xfwm4/themerc${ELSE_LIGHT:-}"                                 "${THEME_DIR}/xfwm4/themerc"
+	# mkdir -p                                                                             "${THEME_DIR}-hdpi/xfwm4"
+	# cp -r "${SRC_DIR}/assets/xfwm4/assets${ELSE_LIGHT:-}${ctype}${window}-hdpi/"*.png    "${THEME_DIR}-hdpi/xfwm4"
+	# cp -r "${SRC_DIR}/main/xfwm4/themerc${ELSE_LIGHT:-}"                                 "${THEME_DIR}-hdpi/xfwm4/themerc"
+	# sed -i "s/button_offset=6/button_offset=9/"                                          "${THEME_DIR}-hdpi/xfwm4/themerc"
+	# mkdir -p                                                                             "${THEME_DIR}-xhdpi/xfwm4"
+	# cp -r "${SRC_DIR}/assets/xfwm4/assets${ELSE_LIGHT:-}${ctype}${window}-xhdpi/"*.png   "${THEME_DIR}-xhdpi/xfwm4"
+	# cp -r "${SRC_DIR}/main/xfwm4/themerc${ELSE_LIGHT:-}"                                 "${THEME_DIR}-xhdpi/xfwm4/themerc"
+	# sed -i "s/button_offset=6/button_offset=12/"                                         "${THEME_DIR}-xhdpi/xfwm4/themerc"
 
 	# Plank Themes
-	mkdir -p                                                							 "${THEME_DIR}/plank"
-	if [[ "$color" == '-Light' ]]; then
-		cp -r "${SRC_DIR}/main/plank/theme-Light${ctype}/"* 							 "${THEME_DIR}/plank"
-	else
-		cp -r "${SRC_DIR}/main/plank/theme-Dark${ctype}/"*  							 "${THEME_DIR}/plank"
-	fi
+	# mkdir -p                                                						 "${THEME_DIR}/plank"
+	# if [[ "$color" == '-Light' ]]; then
+	# 	cp -r "${SRC_DIR}/main/plank/theme-Light${ctype}/"* 							 "${THEME_DIR}/plank"
+	# else
+	# 	cp -r "${SRC_DIR}/main/plank/theme-Dark${ctype}/"*  							 "${THEME_DIR}/plank"
+	# fi
 }
 
 themes=()
@@ -330,6 +330,12 @@ while [[ $# -gt 0 ]]; do
 				echo -e "Macchiato ColorScheme version! ..."
 				shift
 				;;
+			hazelnut)
+				hazelnut="true"
+				ctype="-Hazelnut"
+				echo -e "Hazelnut ColorScheme version! ..."
+				shift
+				;;
 			frappe)
 				frappe="true"
 				ctype="-Frappe"
@@ -432,6 +438,11 @@ macchiato_color() {
 	sed -i "/\$colorscheme:/s/default/macchiato/" "${SRC_DIR}/sass/_tweaks-temp.scss"
 }
 
+hazelnut_color() {
+	sed -i "/\@import/s/color-palette-default/color-palette-hazelnut/" "${SRC_DIR}/sass/_tweaks-temp.scss"
+	sed -i "/\$colorscheme:/s/default/hazelnut/" "${SRC_DIR}/sass/_tweaks-temp.scss"
+}
+
 frappe_color() {
 	sed -i "/\@import/s/color-palette-default/color-palette-frappe/" "${SRC_DIR}/sass/_tweaks-temp.scss"
 	sed -i "/\$colorscheme:/s/default/frappe/" "${SRC_DIR}/sass/_tweaks-temp.scss"
@@ -509,6 +520,10 @@ theme_tweaks() {
 		macchiato_color
 	fi
 
+	if [[ "$hazelnut" = "true" ]]; then
+		hazelnut_color
+	fi
+
 	if [[ "$frappe" = "true" ]]; then
 		frappe_color
 	fi
@@ -544,7 +559,15 @@ link_libadwaita() {
 
 	local THEME_DIR="${1}/${2}${3}${4}${5}${6}"
 
+	rm -rf "${HOME}/.config/gtk-3.0/"{assets,gtk.css,gtk-dark.css}
 	rm -rf "${HOME}/.config/gtk-4.0/"{assets,gtk.css,gtk-dark.css}
+
+	echo -e "\nLink '$THEME_DIR/gtk-3.0' to '${HOME}/.config/gtk-3.0' for libadwaita..."
+
+	mkdir -p "${HOME}/.config/gtk-3.0"
+	ln -sf "${THEME_DIR}/gtk-3.0/assets" "${HOME}/.config/gtk-3.0/assets"
+	ln -sf "${THEME_DIR}/gtk-3.0/gtk.css" "${HOME}/.config/gtk-3.0/gtk.css"
+	ln -sf "${THEME_DIR}/gtk-3.0/gtk-dark.css" "${HOME}/.config/gtk-3.0/gtk-dark.css"
 
 	echo -e "\nLink '$THEME_DIR/gtk-4.0' to '${HOME}/.config/gtk-4.0' for libadwaita..."
 
