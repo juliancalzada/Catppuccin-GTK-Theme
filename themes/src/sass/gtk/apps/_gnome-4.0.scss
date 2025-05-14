@@ -452,13 +452,13 @@ event {
   }
 
   &:not(.timed).color-dark {
-    color: white;
+    color: $white;
     outline-color: rgba(0, 0, 0, 0.3);
   }
 
   &.timed,
   &:not(.timed).color-light {
-    color: gtkalpha(black, 0.75);
+    color: gtkalpha($black, 0.75);
     outline-color: rgba(255, 255, 255, 0.5);
   }
 }
@@ -512,7 +512,7 @@ button:checked:not(:backdrop) .calendar-color-image,
 .calendars-list .calendar-color-image:not(:backdrop):not(:disabled),
 .calendar-list .calendar-color-image:not(:backdrop):not(:disabled),
 .sources-button:not(:backdrop):not(:disabled) .calendar-color-image {
-  -gtk-icon-shadow: 0 1px gtkalpha(black, 0.1);
+  -gtk-icon-shadow: 0 1px gtkalpha($black, 0.1);
 }
 
 // Date chooser
@@ -878,7 +878,7 @@ leaflet.unfolded .contacts-contact-list {
   background-color: $primary;
   border-radius: 0;
   color: on($primary);
-  text-shadow: 0 1px 0 rgba(black, 0.2);
+  text-shadow: 0 1px 0 rgba($black, 0.2);
 }
 
 screenshot-carousel box.frame {
@@ -992,7 +992,7 @@ flowboxchild.card:not(.category-tile) {
   // Styling for specific category buttons.
   &.category-create {
     background: linear-gradient(180deg, #ce8cd7 0%, #2861c6 100%);
-    color: white;
+    color: $white;
 
     &:hover {
       background: linear-gradient(
@@ -1000,7 +1000,7 @@ flowboxchild.card:not(.category-tile) {
         shade(#ce8cd7, 1.07) 0%,
         shade(#2861c6, 1.1) 100%
       );
-      color: white;
+      color: $white;
     }
 
     &:active {
@@ -1009,28 +1009,28 @@ flowboxchild.card:not(.category-tile) {
         shade(#ce8cd7, 0.95) 0%,
         shade(#2861c6, 0.95) 100%
       );
-      color: white;
+      color: $white;
     }
   }
 
   &.category-develop {
     background-color: #5e5c64;
-    color: white;
+    color: $white;
 
     &:hover {
       background-color: shade(#5e5c64, 1.2);
-      color: white;
+      color: $white;
     }
 
     &:active {
       background-color: shade(#5e5c64, 0.95);
-      color: white;
+      color: $white;
     }
   }
 
   &.category-learn {
     background: linear-gradient(180deg, #2ec27e 30%, #27a66c 100%);
-    color: white;
+    color: $white;
 
     &:hover {
       background: linear-gradient(
@@ -1038,7 +1038,7 @@ flowboxchild.card:not(.category-tile) {
         shade(#2ec27e, 1.06) 30%,
         shade(#27a66c, 1.06) 100%
       );
-      color: white;
+      color: $white;
     }
 
     &:active {
@@ -1047,7 +1047,7 @@ flowboxchild.card:not(.category-tile) {
         shade(#2ec27e, 0.95) 30%,
         shade(#27a66c, 0.95) 100%
       );
-      color: white;
+      color: $white;
     }
   }
 
@@ -1332,7 +1332,7 @@ star-image > image.non-starred:hover {
 
 .upgrade-banner-background {
   background: linear-gradient(to bottom, $green-light, $blue-light);
-  color: white;
+  color: $white;
 }
 
 .upgrade-buttons #button_upgrades_install,
@@ -1743,7 +1743,7 @@ scrolledwindow.inline undershoot.top {
 }
 
 .search-view menubutton button:focus:focus-visible {
-  outline-color: rgba(white, 0.3);
+  outline-color: rgba($white, 0.3);
 }
 
 image.circular {

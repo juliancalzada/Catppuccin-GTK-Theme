@@ -71,8 +71,8 @@ read if you used those and something break with a version upgrade you're on your
 
 $windows-border: if(
   $variant == "light",
-  mix(black, $base, 35%),
-  mix(black, $base, 80%)
+  mix($black, $base, 35%),
+  mix($black, $base, 80%)
 );
 
 @define-color wm_focused_title #{"" + $titlebar-text};
@@ -85,15 +85,15 @@ $windows-border: if(
 @define-color wm_button_icon #{"" + $white};
 
 @if $colorscheme == "macchiato" {
-  @define-color wm_button_icon alpha(#{black}, 0.5);
+  @define-color wm_button_icon alpha(#{$black}, 0.5);
 }
 
 @if $colorscheme == "hazelnut" {
-  @define-color wm_button_icon alpha(#{black}, 0.85);
+  @define-color wm_button_icon alpha(#{$black}, 0.85);
 }
 
-@define-color wm_button_focused_bg #{"" + if($topbar == 'light', mix(white, $titlebar, 60%), mix($titlebar-text, $titlebar, 6%))};
-@define-color wm_button_unfocused_bg #{"" + if($topbar == 'light', mix(white, $titlebar, 60%), mix($titlebar-text, $titlebar, 6%))};
+@define-color wm_button_focused_bg #{"" + if($topbar == 'light', mix($white, $titlebar, 60%), mix($titlebar-text, $titlebar, 6%))};
+@define-color wm_button_unfocused_bg #{"" + if($topbar == 'light', mix($white, $titlebar, 60%), mix($titlebar-text, $titlebar, 6%))};
 @define-color wm_button_hover_fg #{"" + on($titlebar-indicator)};
 @define-color wm_button_active_fg #{"" + on($titlebar-indicator)};
 @define-color wm_button_hover_bg #{"" + $titlebar-indicator};

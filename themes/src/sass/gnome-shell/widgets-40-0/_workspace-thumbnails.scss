@@ -7,8 +7,8 @@
   padding: $base_padding;
 
   .workspace-thumbnail {
-    color: on(black, secondary);
-    background-color: on(black, divider);
+    color: on($black, secondary);
+    background-color: on($black, divider);
     border: none;
     border-radius: $base_radius;
   }

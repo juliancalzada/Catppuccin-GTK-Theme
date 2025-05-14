@@ -2,8 +2,8 @@
 
 .workspace-thumbnails {
   //container ala dash
-  color: on(black, secondary);
-  background-color: on(black, divider);
+  color: on($black, secondary);
+  background-color: on($black, divider);
   border: none;
   visible-width: 32px; //amount visible before hover
   spacing: 12px;

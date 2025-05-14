@@ -38,16 +38,16 @@
   }
 
   .overview-icon {
-    background-color: on(black, divider);
+    background-color: on($black, divider);
     border-radius: $icon_radius;
   }
 
   &:hover .overview-icon {
-    background-color: overlay(black, active);
+    background-color: overlay($black, active);
   }
 
   &:active .overview-icon {
-    background-color: on(black, track);
+    background-color: on($black, track);
   }
 }
 
@@ -137,7 +137,7 @@
   width: $base_padding;
   height: 3px;
   border-radius: 2px;
-  background-color: on(black, track);
+  background-color: on($black, track);
   margin-bottom: 0;
 
   StWidget.focused & {

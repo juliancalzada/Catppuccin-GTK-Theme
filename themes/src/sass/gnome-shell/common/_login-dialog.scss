@@ -79,7 +79,7 @@
     height: 32px;
     border: none;
     background-color: $divider;
-    color: on(black);
+    color: on($black);
 
     StIcon {
       icon-size: 16px;
@@ -87,7 +87,7 @@
   }
 
   .login-dialog-message-warning {
-    color: on(black, secondary);
+    color: on($black, secondary);
   }
 }
 
@@ -95,7 +95,7 @@
   padding: 24px 0px;
 }
 .login-dialog-banner {
-  color: on(black, secondary);
+  color: on($black, secondary);
 }
 .login-dialog-button-box {
   spacing: 5px;
@@ -117,20 +117,20 @@
   padding-left: 2px;
   .login-dialog-not-listed-button:focus &,
   .login-dialog-not-listed-button:hover & {
-    color: on(black);
+    color: on($black);
   }
 }
 
 .login-dialog-not-listed-label {
   font-size: 1em;
   font-weight: bold;
-  color: on(black, secondary);
+  color: on($black, secondary);
   padding-top: 1em;
   &:hover {
-    color: on(black, secondary);
+    color: on($black, secondary);
   }
   &:focus {
-    background-color: on(black, divider);
+    background-color: on($black, divider);
   }
 }
 
@@ -144,8 +144,8 @@
   &:expanded .login-dialog-user-list-item:selected,
   &:expanded .login-dialog-user-list-item:hover,
   &:expanded .login-dialog-user-list-item:active {
-    background-color: on(black, track);
-    color: on(black, secondary);
+    background-color: on($black, track);
+    color: on($black, secondary);
   }
   &:expanded .login-dialog-user-list-item:logged-in {
     border-right: 2px solid $primary;
@@ -155,7 +155,7 @@
 .login-dialog-user-list-item {
   border-radius: $menu_radius;
   padding: 6px;
-  color: on(black, secondary);
+  color: on($black, secondary);
 
   &:ltr .user-widget {
     padding-right: 1em;
@@ -175,24 +175,24 @@
   &:hover,
   &:focus:hover {
     background-color: $divider !important;
-    color: on(black, secondary);
+    color: on($black, secondary);
   }
 
   &:active,
   &:focus:active {
     background-color: $track !important;
-    color: on(black, secondary);
+    color: on($black, secondary);
   }
 
   .login-dialog-timed-login-indicator {
     height: 2px;
     margin: 6px 0 0 0;
-    background-color: overlay(black, hover) !important;
+    background-color: overlay($black, hover) !important;
   }
 }
 
 .user-widget-label {
-  color: on(black, secondary);
+  color: on($black, secondary);
 }
 
 .user-widget.horizontal .user-widget-label {
@@ -229,7 +229,7 @@
 }
 
 .login-dialog-prompt-label {
-  color: on(black, secondary);
+  color: on($black, secondary);
   @include fontsize($font_size + 1);
   padding-top: 1em;
 }

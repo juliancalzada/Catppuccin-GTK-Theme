@@ -11,9 +11,9 @@ UnityDecoration {
 
   -unitydecoration-shadow-offset-x: 0;
   -unitydecoration-shadow-offset-y: 3px;
-  -unitydecoration-active-shadow-color: rgba(black, 0.48);
+  -unitydecoration-active-shadow-color: rgba($black, 0.48);
   -unitydecoration-active-shadow-radius: 18px;
-  -unitydecoration-inactive-shadow-color: rgba(black, 0.32);
+  -unitydecoration-inactive-shadow-color: rgba($black, 0.32);
   -unitydecoration-inactive-shadow-radius: 6px;
 
   -unitydecoration-glow-size: 8px;

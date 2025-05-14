@@ -3,7 +3,7 @@
 $key_size: 1.2em;
 $keyboard_bg_color: if($variant == "light", #d8dade, #1d1d1d);
 $key_border_radius: $base_radius + 3px;
-$key_bg_color: if($variant == "light", white, #707070);
+$key_bg_color: if($variant == "light", $white, #707070);
 $default_key_bg_color: if($variant == "light", #adb3bc, #4b4b4b);
 
 // draw keys using button function
@@ -40,7 +40,7 @@ $default_key_bg_color: if($variant == "light", #adb3bc, #4b4b4b);
   color: $text-secondary;
   background-color: $key_bg_color;
   box-shadow: inset 0 -1px
-    if($variant == "light", rgba(black, 0.35), rgba(black, 0.85));
+    if($variant == "light", rgba($black, 0.35), rgba($black, 0.85));
 
   &:focus,
   &:hover {
@@ -72,7 +72,7 @@ $default_key_bg_color: if($variant == "light", #adb3bc, #4b4b4b);
     // non-character keys
     background-color: $default_key_bg_color;
     box-shadow: inset 0 -1px
-      if($variant == "light", rgba(black, 0.2), rgba(black, 0.85));
+      if($variant == "light", rgba($black, 0.2), rgba($black, 0.85));
 
     &:focus,
     &:hover {
@@ -138,7 +138,7 @@ $default_key_bg_color: if($variant == "light", #adb3bc, #4b4b4b);
   -arrow-rise: 10px;
   -boxpointer-gap: $base_spacing;
   box-shadow: inset 0 -1px
-    if($variant == "light", rgba(black, 0.35), rgba(black, 0.85));
+    if($variant == "light", rgba($black, 0.35), rgba($black, 0.85));
 }
 
 // emoji

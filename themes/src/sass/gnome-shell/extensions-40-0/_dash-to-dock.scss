@@ -16,7 +16,7 @@
 
   .number-overlay {
     color: $panel-text;
-    background-color: rgba(black, 0.75);
+    background-color: rgba($black, 0.75);
     text-align: center;
   }
 
@@ -159,7 +159,7 @@
   }
 
   .app-well-app-running-dot {
-    background-color: on(black, track);
+    background-color: on($black, track);
   }
 
   StWidget.focused .app-well-app-running-dot {
@@ -179,7 +179,7 @@
   &:overview #dash .dash-background {
     // overview-mode #1
     // background-color: rgba($primary, 0.3);
-    background-color: on(black, divider);
+    background-color: on($black, divider);
     border: 2px solid transparent;
   }
 

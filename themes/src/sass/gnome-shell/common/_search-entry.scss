@@ -18,7 +18,7 @@
 
   &:focus {
     @if $theme == "grey" {
-      @include entry(focus, $bc: $base, $fc: white);
+      @include entry(focus, $bc: $base, $fc: $white);
     } @else {
       @include entry(focus, $bc: $base);
     }

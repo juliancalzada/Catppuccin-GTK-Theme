@@ -30,7 +30,7 @@ $screenshot_ui_button_red: $error;
   @extend .window-close; // copy window close button
   padding: $base_padding !important; // but with more padding
   margin-top: 12px;
-  box-shadow: 0 2px 4px 0 rgba(black, 0.15);
+  box-shadow: 0 2px 4px 0 rgba($black, 0.15);
   &.left {
     margin-left: $base_padding * 2;
   }

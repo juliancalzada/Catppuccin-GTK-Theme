@@ -256,7 +256,7 @@ indicatorbin {
 
   > mask {
     padding: 1px;
-    background: black;
+    background: $black;
   }
 
   &.needs-attention > indicator {
@@ -907,8 +907,8 @@ panelthemeselector {
         &:hover,
         &:active {
           box-shadow:
-            0 2px 3px -1px rgba(black, 0.08),
-            0 1px 2px 0 rgba(black, 0.1);
+            0 2px 3px -1px rgba($black, 0.08),
+            0 1px 2px 0 rgba($black, 0.1);
         }
       }
     }
@@ -933,8 +933,8 @@ themeswitcher {
     &:hover,
     &:active {
       box-shadow:
-        0 2px 3px -1px rgba(black, 0.08),
-        0 1px 2px 0 rgba(black, 0.1);
+        0 2px 3px -1px rgba($black, 0.08),
+        0 1px 2px 0 rgba($black, 0.1);
     }
   }
 
@@ -973,7 +973,7 @@ themeswitcher {
     }
 
     &.light {
-      color: gtkalpha(black, 0.8);
+      color: gtkalpha($black, 0.8);
       background-color: $white;
     }
 
