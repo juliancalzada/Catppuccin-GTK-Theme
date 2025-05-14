@@ -8,7 +8,7 @@
     border-radius: $icon_radius;
     padding: $base_padding;
     border: none;
-    transition-duration: 100ms;
+    transition-duration: $shorter_duration;
     text-align: center;
   }
 

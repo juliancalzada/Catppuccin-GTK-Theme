@@ -121,7 +121,7 @@
   &.running-dots,
   &.dashtodock {
     .dash-item-container > StButton {
-      transition-duration: 250ms;
+      transition-duration: $longer_duration;
       background-size: contain;
     }
   }

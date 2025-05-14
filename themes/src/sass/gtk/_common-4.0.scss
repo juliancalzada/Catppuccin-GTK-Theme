@@ -3143,7 +3143,7 @@ tabbar {
   }
 
   undershoot {
-    transition: background 150ms ease-in-out;
+    transition: background $shorter_duration ease-in-out;
 
     &.left {
       @include undershoot-gradient("right", $base);
@@ -3178,7 +3178,7 @@ tabbar {
       margin: 9px 0;
       min-width: 1px;
       background-color: on($indicator, divider);
-      transition: opacity 150ms ease-in-out;
+      transition: opacity $shorter_duration ease-in-out;
 
       &.hidden {
         opacity: 0;
@@ -3214,7 +3214,7 @@ tabbar {
     background-clip: padding-box;
     border-color: $border;
     border-style: solid;
-    transition: background 150ms ease-in-out;
+    transition: background $shorter_duration ease-in-out;
 
     button {
       border: none;
@@ -4694,7 +4694,7 @@ row.expander {
   image.expander-row-arrow {
     @extend .dim-label;
 
-    transition: -gtk-icon-transform 200ms $ease-out;
+    transition: -gtk-icon-transform $duration $ease-out;
     @include margin-start($space-size);
 
     &:dir(ltr) {
@@ -5326,12 +5326,12 @@ placessidebar {
 
 placesview {
   .server-list-button > image {
-    transition: 200ms $ease-out;
+    transition: $duration $ease-out;
     -gtk-icon-transform: rotate(0turn);
   }
 
   .server-list-button:checked > image {
-    transition: 200ms $ease-out;
+    transition: $duration $ease-out;
     -gtk-icon-transform: rotate(-0.5turn);
   }
 

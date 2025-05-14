@@ -665,11 +665,11 @@ monthcell {
   border: solid 1px $border;
   border-width: 1px 0 0 1px;
   background-color: transparent;
-  transition: background-color 200ms;
+  transition: background-color $duration;
 
   &:hover:not(.out-of-month):not(.today) {
     background-color: $base-alt;
-    transition: background-color 200ms;
+    transition: background-color $duration;
     color: $text;
   }
 
@@ -1297,7 +1297,7 @@ flowboxchild {
 
 star-image > image.starred {
   color: $yellow-dark;
-  transition-duration: 200ms;
+  transition-duration: $duration;
 }
 
 star-image > image.starred:hover {
@@ -1306,7 +1306,7 @@ star-image > image.starred:hover {
 
 star-image > image.non-starred {
   opacity: 0.2;
-  transition-duration: 200ms;
+  transition-duration: $duration;
 }
 
 star-image > image.non-starred:hover {
@@ -1662,7 +1662,7 @@ $weather_forecast_color: #ae7b03;
 }
 
 .forecast-card {
-  transition: border-radius 100ms ease-out;
+  transition: border-radius $shorter_duration ease-out;
   border-radius: $corner-radius;
 }
 

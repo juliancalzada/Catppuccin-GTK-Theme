@@ -44,7 +44,7 @@
     text-shadow: none;
     border-radius: $base_radius;
     margin: 0 2px;
-    transition-duration: 100ms;
+    transition-duration: $shorter_duration;
     font-weight: normal;
     background-color: transparent;
 

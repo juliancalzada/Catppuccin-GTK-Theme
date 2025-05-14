@@ -58,7 +58,7 @@ $dash_spacing: $base_margin * 0.5;
         padding: $base_padding;
         spacing: $base_padding;
         text-align: center;
-        transition-duration: 100ms;
+        transition-duration: $shorter_duration;
         background-color: transparent;
         color: on($osd);
       }
