@@ -3,14 +3,14 @@
 %search-section-content-item {
   border-radius: $base_radius;
   padding: $base_padding;
-  transition-duration: 100ms;
+  transition-duration: $shorter_duration;
   text-align: center;
 
   &:focus,
   &:hover,
   &:selected {
     background-color: overlay(black, hover);
-    transition-duration: 200ms;
+    transition-duration: $duration;
   }
 
   &:active,

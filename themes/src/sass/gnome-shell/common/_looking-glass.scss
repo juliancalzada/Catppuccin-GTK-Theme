@@ -36,7 +36,7 @@
     padding-right: 16px;
     min-height: $item_size;
     padding: $base_padding / 2 $base_padding * 5;
-    transition-duration: 100ms;
+    transition-duration: $shorter_duration;
     border: none;
     background-color: transparent;
     border-radius: 0;

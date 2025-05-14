@@ -56,7 +56,7 @@ $screenshot_ui_button_red: $error;
 
   .screenshot-ui-capture-button-circle {
     background-color: on($osd);
-    transition-duration: 200ms;
+    transition-duration: $duration;
     &:hover,
     &:focus {
       background-color: $divider;
@@ -181,13 +181,13 @@ $screenshot_ui_button_red: $error;
 }
 
 .screenshot-ui-window-selector-window-border {
-  transition-duration: 200ms;
+  transition-duration: $duration;
   border-radius: $modal_radius;
   border: 6px transparent;
 }
 
 .screenshot-ui-window-selector-check {
-  transition-duration: 200ms;
+  transition-duration: $duration;
   color: transparent;
   border-radius: $circular_radius;
   border-width: 12px;
@@ -214,7 +214,7 @@ $screenshot_ui_button_red: $error;
 }
 
 .screenshot-ui-screen-selector {
-  transition-duration: 200ms;
+  transition-duration: $duration;
   background-color: rgba(0, 0, 0, 0.5);
 
   &:hover {

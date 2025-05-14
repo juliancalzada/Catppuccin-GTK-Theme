@@ -27,13 +27,14 @@ $scalable_icon_size: to_em(16px);
 $medium_scalable_icon_size: $scalable_icon_size * 1.5;
 $large_scalable_icon_size: $scalable_icon_size * 2;
 
-// radiuses
+// radii
 $circular_radius: 9999px;
 $base_radius: 12px;
-$icon_radius: 16px;
-$window_radius: 20px;
-$menu_radius: $base_radius + $base_padding;
-$modal_radius: $menu_radius;
+$corner_radius: $base_radius * 0.5;
+$icon_radius: $base_radius;
+$window_radius: $base_radius;
+$menu_radius: $corner_radius + $base_padding;
+$modal_radius: $corner_radius - 2;
 
 // icons
 $base_icon_size: 16px;
@@ -41,9 +42,10 @@ $medium_icon_size: $base_icon_size * 1.5; // 24px
 $large_icon_size: $base_icon_size * 2; // 32px
 
 // durations
-$shorter_duration: 100ms;
-$longer_duration: 150ms;
-$ripple_duration: 250ms;
+$duration: 300ms;
+$shorter_duration: $duration * 0.5; // 150ms
+$longer_duration: $duration * 2; // 600ms
+$ripple_duration: $duration * 4; // 1200ms
 
 // Shadows
 $shadow-z1:

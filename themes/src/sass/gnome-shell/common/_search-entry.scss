@@ -5,7 +5,7 @@
   min-height: $item_size;
   padding: 0 $base_padding * 2;
   color: $text-secondary;
-  transition-duration: 150ms;
+  transition-duration: $shorter_duration;
   border-radius: $base_radius;
   caret-color: $text;
   selection-background-color: $divider;

@@ -12,19 +12,22 @@ $menuitem-size: if($compact == "false", 28px, 24px);
 
 $root-font-size: if($compact == "false", 14px, 13px);
 
-// Radiuses
-$window-radius: 12px;
-$modal-radius: 9px;
-$corner-radius: 12px;
+// radii
+$base-radius: 12px;
+$window-radius: $base-radius;
+$modal-radius: $base-radius - 2;
+$corner-radius: $base-radius * 0.5;
 $menu-radius: $corner-radius;
 $menuitem-radius: $menu-radius;
 $circular-radius: 9999px;
 
 // Durations
-$duration: 75ms;
-$ripple-fade-in-duration: 225ms;
-$ripple-fade-out-duration: 300ms;
-$ripple-fade-out-opacity-duration: 1200ms;
+$duration: 300ms;
+$shorter_duration: $duration * 0.5; // 150ms
+$longer_duration: $duration * 2; // 600ms
+$ripple-fade-in-duration: $shorter_duration; // 150ms
+$ripple-fade-out-duration: $longer_duration; // 600ms
+$ripple-fade-out-opacity-duration: $duration * 4; // 1200ms
 
 // Timing functions
 $ease: cubic-bezier(0.4, 0, 0.2, 1);

@@ -20,7 +20,7 @@ $app_folder_size: 720px;
   border-radius: $base_radius * 2.5;
   padding: 15px;
   border: none;
-  transition-duration: 100ms;
+  transition-duration: $shorter_duration;
   text-align: center;
   background-color: transparent;
 
@@ -190,7 +190,7 @@ $app_folder_size: 720px;
   width: $medium_icon_size;
   height: $medium_icon_size;
   border-radius: $circular_radius;
-  transition-duration: 100ms;
+  transition-duration: $shorter_duration;
   color: on($osd, secondary);
   background-color: transparent;
 
