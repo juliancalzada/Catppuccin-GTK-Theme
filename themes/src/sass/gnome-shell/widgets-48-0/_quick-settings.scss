@@ -2,7 +2,7 @@
 
 .quick-settings {
   padding: $base_padding * 3 !important;
-  border-radius: $base_radius * 2 !important;
+  border-radius: $corner_radius !important;
   margin-top: $base_padding !important;
 
   .icon-button,
@@ -22,7 +22,7 @@
 
 .quick-toggle,
 .quick-toggle-has-menu {
-  border-radius: $base_radius;
+  border-radius: $corner_radius;
   min-width: 12em;
   max-width: 12em;
   min-height: 44px;
@@ -97,23 +97,23 @@
     max-width: auto;
 
     &:ltr {
-      border-radius: $base_radius 0 0 $base_radius;
+      border-radius: $corner_radius 0 0 $corner_radius;
     }
     &:ltr {
       padding-right: $base_padding * 1.5;
     }
     &:rtl {
-      border-radius: 0 $base_radius $base_radius 0;
+      border-radius: 0 $corner_radius $corner_radius 0;
     }
     &:rtr {
       padding-left: $base_padding * 1.5;
     }
 
     &:ltr:last-child {
-      border-radius: $base_radius;
+      border-radius: $corner_radius;
     }
     &:rtl:last-child {
-      border-radius: $base_radius;
+      border-radius: $corner_radius;
     }
   }
 
@@ -123,10 +123,10 @@
     margin: 1px;
 
     &:ltr {
-      border-radius: 0 $base_radius $base_radius 0;
+      border-radius: 0 $corner_radius $corner_radius 0;
     }
     &:rtl {
-      border-radius: $base_radius 0 0 $base_radius;
+      border-radius: $corner_radius 0 0 $corner_radius;
     }
   }
 
@@ -187,7 +187,7 @@
   .icon-button {
     background-color: $button !important;
     color: $primary !important;
-    border-radius: $base_radius;
+    border-radius: $corner_radius;
     padding: $base_padding * 1.5;
 
     &:hover {
@@ -203,12 +203,12 @@
 .quick-toggle-menu {
   background-color: $popover !important;
   color: $text !important;
-  border-radius: $base_radius + $base_padding * 2 !important;
+  border-radius: $corner_radius + $base_padding !important;
   padding: $base_padding * 2;
   margin: $base_padding * 2 $base_padding * 3 0;
 
   .popup-menu-item {
-    border-radius: $base_radius !important;
+    border-radius: $corner_radius !important;
 
     &:focus,
     &:hover,
@@ -234,7 +234,7 @@
 
     & .icon {
       icon-size: $base_icon_size * 1.5; // a non-standard symbolic size but ok
-      border-radius: $base_radius;
+      border-radius: $corner_radius;
       padding: 1.5 * $base_padding;
       background-color: on($popover, divider) !important;
 
@@ -262,7 +262,7 @@
   .icon-button {
     background-color: $button;
     color: $primary !important;
-    border-radius: $base_radius;
+    border-radius: $corner_radius;
     @extend %button;
 
     > StIcon {
