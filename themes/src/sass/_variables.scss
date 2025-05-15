@@ -12,6 +12,11 @@ $menuitem-size: if($compact == "false", 32px, 24px);
 
 $root-font-size: if($compact == "false", 13px, 11px);
 
+// padding, margin and spacing
+$base-padding: if($compact == "false", 6px, 3px);
+$base-margin: if($compact == "false", 6px, 3px);
+$base-spacing: if($compact == "false", 6px, 3px);
+
 // radii
 $base-radius: 12px;
 $window-radius: $base-radius;
