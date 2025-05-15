@@ -35,8 +35,8 @@
   color: if($variant == "light", $white, $black);
 
   &:hover {
-    background-color: rgba($primary, 0.25) !important;
-    color: if($variant == "light", $white, $black);
+    background-color: mix($text, $primary, 40%) !important;
+    color: if($variant == "light", $white, $black) !important;
   }
 
   &:active {
@@ -45,7 +45,7 @@
 
   &:checked {
     background-color: rgba($primary, 0.95) !important;
-    color: if($variant == "light", $white, $black);
+    color: $text;
 
     &:hover {
       background-color: mix($text, $primary, 40%) !important;
@@ -141,8 +141,8 @@
     color: if($variant == "light", $black, $white);
 
     &:hover {
-      background-color: rgba($primary, 0.25) !important;
-      color: if($variant == "light", $black, $white);
+      background-color: mix($text, $primary, 40%) !important;
+      color: if($variant == "light", $white, $black);
     }
 
     &:active {
@@ -151,7 +151,7 @@
 
     &:checked {
       background-color: rgba($primary, 0.75) !important;
-      color: if($variant == "light", $white, $black);
+      color: $text;
 
       &:hover {
         background-color: mix($text, $primary, 40%) !important;
@@ -186,12 +186,13 @@
 
   .icon-button {
     background-color: $button !important;
-    color: $primary !important;
+    color: $text !important;
     border-radius: $corner_radius;
     padding: $base_padding * 1.5;
 
     &:hover {
-      background-color: $divider !important;
+      background-color: mix($text, $primary, 40%) !important;
+      color: if($variant == "light", $white, $black) !important;
     }
 
     &:active {
@@ -261,7 +262,7 @@
 
   .icon-button {
     background-color: $button;
-    color: $primary !important;
+    color: $text !important;
     border-radius: $corner_radius;
     @extend %button;
 

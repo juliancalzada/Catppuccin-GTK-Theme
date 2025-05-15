@@ -192,7 +192,6 @@
 
     &.calendar-weekend {
       color: $text-disabled !important;
-      // font-weight: normal;
     }
   }
 
@@ -211,7 +210,6 @@
 
   .calendar-nonwork-day {
     color: $text;
-    // font-weight: normal;
   }
 
   // Today
@@ -234,7 +232,7 @@
 
     &:selected {
       background-color: $primary;
-      color: if($variant == "light", $white, $black) !important;
+      color: $white !important;
 
       &:hover,
       &:focus {
