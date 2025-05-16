@@ -72,7 +72,7 @@
 
       &.clock-display {
         box-shadow: none;
-        color: $panel-text-secondary;
+        color: $black;
 
         .clock {
           box-shadow: none;
@@ -93,18 +93,18 @@
     &:checked {
       &,
       &:hover {
-        color: $panel-text;
+        color: $black;
         background-color: $primary;
       }
 
       &.clock-display {
         box-shadow: none;
-        color: $panel-text;
+        color: $black;
         margin: 0;
 
         .clock {
           box-shadow: none;
-          color: $panel-text;
+          color: $black;
           background-color: $primary;
           margin: $base_margin * 0.5;
         }
@@ -119,7 +119,7 @@
       &:focus,
       &:hover,
       &:active {
-        color: $panel-text;
+        // color: $panel-text;
       }
     }
 
@@ -178,7 +178,7 @@
 
         &.clock-display {
           box-shadow: none;
-          color: $panel-text-secondary;
+          color: $black;
           margin: 0;
 
           .clock {
@@ -192,17 +192,17 @@
       &:overview,
       &:focus,
       &:checked {
-        color: $panel-text;
+        color: $black;
         background-color: $primary;
         margin: $base_margin * 0.5;
 
         &.clock-display {
           box-shadow: none;
-          color: $panel-text;
+          color: $black;
           margin: 0;
 
           .clock {
-            color: $panel-text;
+            color: $black;
             margin: $base_margin * 0.5;
           }
         }
@@ -212,7 +212,7 @@
         box-shadow: none;
 
         & .workspace-dot {
-          background-color: $panel-text;
+          background-color: $black;
         }
       }
     }
