@@ -1,6 +1,6 @@
 #dash {
-  color: on(black, secondary);
-  background-color: on(black, divider);
+  color: on($black, secondary);
+  background-color: on($black, divider);
   border-left: 0;
   border-radius: 0 $modal_radius $modal_radius 0;
   padding: 6px;

@@ -9,13 +9,13 @@
   &:focus,
   &:hover,
   &:selected {
-    background-color: overlay(black, hover);
+    background-color: overlay($black, hover);
     transition-duration: $duration;
   }
 
   &:active,
   &:checked {
-    background-color: overlay(black, active);
+    background-color: overlay($black, active);
   }
 }
 
@@ -34,7 +34,7 @@
   // separator
   .search-section-separator {
     height: 1px;
-    background-color: on(black, divider);
+    background-color: on($black, divider);
   }
 }
 
@@ -49,14 +49,14 @@
   background-color: transparent !important;
   background-image: none !important;
   text-shadow: none;
-  color: on(black, secondary);
+  color: on($black, secondary);
 }
 
 // "no results" text
 .search-statustext {
   font-size: 2em;
   font-weight: bold;
-  color: on(black, disabled);
+  color: on($black, disabled);
 }
 
 .grid-search-results {
@@ -79,7 +79,7 @@
     .list-search-provider-details {
       width: 120px;
       margin-top: 0;
-      color: on(black, disabled);
+      color: on($black, disabled);
       // font-weight: bold;
     }
   }
@@ -106,6 +106,6 @@
 
   // list item description
   .list-search-result-description {
-    color: on(black, secondary);
+    color: on($black, secondary);
   }
 }

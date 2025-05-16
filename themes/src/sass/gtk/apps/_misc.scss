@@ -204,7 +204,7 @@ tooltip.background.chromium {
       color: $solid-border;
     }
 
-    // avoid black border
+    // avoid $black border
     > scrollbar {
       background-clip: border-box;
     }
@@ -513,8 +513,8 @@ window.background:not(.csd) {
     entry:focus {
       background-color: if(
         $variant == "light",
-        mix(black, $background, 5%),
-        mix(white, $background, 5%)
+        mix($black, $background, 5%),
+        mix($white, $background, 5%)
       );
     }
   }

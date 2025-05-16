@@ -8,7 +8,7 @@
 // User icon
 .user-icon {
   background-size: contain;
-  color: on(black, secondary);
+  color: on($black, secondary);
   border-radius: $circular_radius;
   border: none;
   box-shadow: none;
@@ -20,11 +20,11 @@
   }
 
   &:hover {
-    color: on(black);
+    color: on($black);
   }
 
   & StIcon {
-    background-color: on(black);
+    background-color: on($black);
     border-radius: $circular_radius;
     padding: $base_padding * 2; // 12px
     width: $base_icon_size * 2.5;
@@ -49,10 +49,10 @@
 }
 
 .lightbox {
-  background-color: black;
+  background-color: $black;
 }
 .flashspot {
-  background-color: white;
+  background-color: $white;
 }
 
 // Hidden

@@ -7,7 +7,7 @@
   spacing: $base_padding;
   margin: $base_padding;
   border-radius: $window_radius;
-  box-shadow: 0 3px 8px 0 rgba(black, 0.25);
+  box-shadow: 0 3px 8px 0 rgba($black, 0.25);
   color: $text;
 
   @if $outline == "true" {
@@ -168,7 +168,7 @@
   border-radius: $base_radius;
   padding: $base_padding;
   margin: 5px 8px 11px;
-  box-shadow: 0 3px 8px 0 rgba(black, 0.25);
+  box-shadow: 0 3px 8px 0 rgba($black, 0.25);
 }
 
 .lg-debug-flag-button {

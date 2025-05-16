@@ -29,7 +29,7 @@
     background-color: if($variant == "light", rgba($white, 0.9), $black);
     border-radius: $base_radius;
     margin: 0 2px;
-    box-shadow: 0 6px 15px -6px rgba(black, 0.25);
+    box-shadow: 0 6px 15px -6px rgba($black, 0.25);
     border: none;
     font-weight: normal;
 

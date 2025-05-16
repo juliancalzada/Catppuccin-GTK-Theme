@@ -1288,9 +1288,9 @@ toolbar {
       background-image: linear-gradient(
         to bottom,
         transparent,
-        rgba(black, 0.1) 30%,
-        rgba(black, 0.2) 50%,
-        rgba(black, 0.4)
+        rgba($black, 0.1) 30%,
+        rgba($black, 0.2) 50%,
+        rgba($black, 0.4)
       );
     }
 
@@ -2488,7 +2488,7 @@ modelbutton.flat arrow {
 }
 
 notebook {
-  // background-color: if($variant == 'light', rgba(white, 0.6), $fill);
+  // background-color: if($variant == 'light', rgba($white, 0.6), $fill);
   background-color: if($variant == "light", rgba($base, 0.4), $fill);
 
   window.background > & {
@@ -2521,7 +2521,7 @@ notebook {
 
   > header {
     border: none;
-    // background-color: if($variant == 'light', rgba(white, 0.6), $fill);
+    // background-color: if($variant == 'light', rgba($white, 0.6), $fill);
     background-color: if($variant == "light", rgba($base, 0.4), $fill);
     padding: $space-size / 2;
     margin: $space-size / 2;
@@ -4494,7 +4494,7 @@ tooltip {
   // padding: 4px; /* not working */
   box-shadow: none; // otherwise it gets inherited by windowframe.csd
 
-  // FIXME: we need a border or tooltips vanish on black background.
+  // FIXME: we need a border or tooltips vanish on $black background.
   decoration {
     background-color: transparent;
   }
@@ -4813,10 +4813,10 @@ decoration {
     }
 
     &:active {
-      box-shadow: inset 0 0 0 9999px rgba(black, if($topbar == "dark", 0.12, 0));
+      box-shadow: inset 0 0 0 9999px rgba($black, if($topbar == "dark", 0.12, 0));
       background-image: radial-gradient(
         circle,
-        rgba(black, 0.12) 10%,
+        rgba($black, 0.12) 10%,
         transparent 0%
       );
     }
@@ -4892,7 +4892,7 @@ decoration {
       color: $titlebar-text;
       background-color: gtkalpha(currentColor, 0.15);
       box-shadow:
-        0 1px 3px rgba(black, 0.1),
+        0 1px 3px rgba($black, 0.1),
         inset 0 1px highlight($titlebar);
     }
 

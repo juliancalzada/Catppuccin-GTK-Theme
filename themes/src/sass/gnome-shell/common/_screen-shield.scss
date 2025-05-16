@@ -1,7 +1,7 @@
 /* Screen Shield */
 
 .unlock-dialog-clock {
-  color: white;
+  color: $white;
   font-weight: 300;
   text-align: center;
   spacing: 24px;
@@ -64,8 +64,8 @@
 
 .screen-shield-background {
   //just the shadow, really
-  background: black;
-  box-shadow: 0 2px 3px 0 rgba(black, 0.15);
+  background: $black;
+  box-shadow: 0 2px 3px 0 rgba($black, 0.15);
 }
 
 #unlockDialogNotifications {

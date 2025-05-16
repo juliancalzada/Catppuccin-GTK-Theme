@@ -87,8 +87,8 @@ $nautilus: $base-alt;
         background-image: image(
           if(
             $variant == "light",
-            mix(black, $nautilus, 12%),
-            mix(white, $nautilus, 12%)
+            mix($black, $nautilus, 12%),
+            mix($white, $nautilus, 12%)
           )
         );
       }
@@ -296,7 +296,7 @@ $nautilus: $base-alt;
 
 // Icon view
 .nautilus-window flowboxchild {
-  // .icon-background { background-color: black; }
+  // .icon-background { background-color: $black; }
 
   .icon-item-background {
     padding: 4px;
@@ -1769,7 +1769,7 @@ frame.documents-dropdown {
 
 box.vertical > revealer > toolbar.search-bar {
   border-bottom: 1px solid $divider;
-  background-clip: border-box; // avoid black border
+  background-clip: border-box; // avoid $black border
 
   button > widget {
     -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
