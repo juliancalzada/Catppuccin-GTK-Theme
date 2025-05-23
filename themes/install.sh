@@ -531,7 +531,8 @@ theme_tweaks() {
 }
 
 uninstall_link() {
-	rm -rf "${HOME}/.config/gtk-4.0/"{assets,windows-assets,gtk.css,gtk-dark.css}
+	rm -rf "${HOME}/.config/gtk-3.0/"{assets,gtk.css,gtk-dark.css}
+	rm -rf "${HOME}/.config/gtk-4.0/"{assets,gtk.css,gtk-dark.css}
 }
 
 link_libadwaita() {
@@ -543,6 +544,16 @@ link_libadwaita() {
 	local ctype="${6}"
 
 	local THEME_DIR="${1}/${2}${3}${4}${5}${6}"
+
+	# rm -rf "${HOME}/.config/gtk-3.0/"{assets,gtk.css,gtk-dark.css}
+	uninstall_link
+
+	echo -e "\nLink '$THEME_DIR/gtk-3.0' to '${HOME}/.config/gtk-3.0' for libadwaita..."
+
+	mkdir -p "${HOME}/.config/gtk-3.0"
+	ln -sf "${THEME_DIR}/gtk-3.0/assets" "${HOME}/.config/gtk-3.0/assets"
+	ln -sf "${THEME_DIR}/gtk-3.0/gtk.css" "${HOME}/.config/gtk-3.0/gtk.css"
+	ln -sf "${THEME_DIR}/gtk-3.0/gtk-dark.css" "${HOME}/.config/gtk-3.0/gtk-dark.css"
 
 	rm -rf "${HOME}/.config/gtk-4.0/"{assets,gtk.css,gtk-dark.css}
 
